@@ -11,6 +11,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: Poppins, sans-serif;
       }
       .main {
         display: table;
@@ -21,7 +22,7 @@
       }
       .backgroundImage {
         background-image: url("https://htmldemo.net/brook/brook/img/revoulation/brook-landing-new-slider-slide-bg.jpg");
-        background-repeat: no-repeat;
+        /* background-repeat: no-repeat; */
         width: 100%;
       }
       .logo {
@@ -41,15 +42,43 @@
       }
       .menu {
         width: 80%;
-        background-color: red;
+        /* background-color: red; */
         float: left;
-        padding: 15px 0;
+        padding: 33px 0;
       }
       .menuButton {
         width: 20%;
-        background-color: green;
+        /* background-color: green; */
         float: right;
-        padding: 15px 0;
+        padding: 18px 0;
+      }
+      ul {
+        list-style-type: none;
+      }
+      li {
+        margin: 0 10px;
+        text-transform: capitalize;
+      }
+      .menu-inside li {
+        float: left;
+        font-weight: bold;
+        font-weight: 600;
+        line-height: 1.18;
+        font-size: 16px;
+      }
+      .menuButton-inside {
+        text-align: center;
+      }
+      .menuButton {
+        margin-right: -50px;
+      }
+      .menuButton-inside button {
+        padding: 10px 40px;
+        font-size: 16px;
+        line-height: 24px;
+        background-color: white;
+        border: 0px;
+        border-radius: 3px;
       }
     </style>
   </head>
@@ -64,8 +93,28 @@
             />
           </div>
           <div class="mainMenu">
-            <div class="menu">sa</div>
-            <div class="menuButton">asa</div>
+            <div class="menu">
+              <div class="menu-inside">
+                <ul>
+                  <li>demos</li>
+
+                  <li>Niche Demos</li>
+
+                  <li>demos</li>
+
+                  <li>Blog & Portfolio</li>
+
+                  <li>Feature</li>
+
+                  <li>Documentation</li>
+                </ul>
+              </div>
+            </div>
+            <div class="menuButton">
+              <div class="menuButton-inside">
+                <button>Purchase</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
