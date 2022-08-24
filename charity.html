@@ -1,0 +1,415 @@
+<html>
+  <head>
+    <title>eCharity</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      width: 1170px;
+      margin: auto;
+    }
+    .main {
+      width: 100%;
+    }
+    .backgroungColorHeader {
+      background-color: #ff5722;
+    }
+    .social {
+      width: 20%;
+    }
+    .sub-social-menu {
+      width: 60%;
+    }
+    .button {
+      width: 20%;
+      padding: 7px;
+      /* align-items: center; */
+      justify-content: center;
+    }
+    .flex {
+      display: flex;
+    }
+    .iconBackgroundColor {
+      color: white;
+      justify-content: space-around;
+    }
+    ul {
+      list-style-type: none;
+    }
+    .flexRowEnd {
+      justify-content: flex-end;
+      padding: 10px 0px;
+    }
+    .paddingIcon {
+      padding: 10px 0px;
+    }
+    .sub-social-menu a {
+      color: white;
+      text-decoration: none;
+      padding: 0 10px;
+    }
+    .button button {
+      padding: 4px 5px;
+    }
+    button a {
+      text-decoration: none;
+      color: black;
+    }
+    .logo {
+      width: 20%;
+    }
+    .logo-sub-menu {
+      width: 80%;
+    }
+    .logo-sub-menu ul {
+      justify-content: flex-end;
+    }
+    .main-logo {
+      padding: 15px;
+      align-items: center;
+    }
+    .logo-sub-menu li {
+      padding: 0 24px;
+    }
+    .logo-sub-menu a {
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: #333333;
+    }
+    .backGroungImage {
+      background-image: url(https://kodesolution.com/html/2016/echarity-html/demo/images/bg/bg5.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      width: 100%;
+      height: 70%;
+      opacity: 1;
+    }
+    .banner-text {
+      width: 50%;
+    }
+    .Text-donate {
+      color: white;
+      font-size: 110px;
+      opacity: 1;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+    }
+    .donatePadding {
+      padding: 145px 20px;
+    }
+    .poorChilder {
+      width: 90%;
+      padding: 0px 20px;
+      letter-spacing: 0px;
+      font-size: 34px;
+      border-radius: 30px;
+      opacity: 1;
+      text-transform: uppercase;
+      color: white;
+      background-color: rgba(255, 87, 34, 0.8);
+      font-family: "Raleway", sans-serif;
+      font-weight: 600;
+      padding: 8px;
+      text-align: center;
+    }
+    .banner-text p {
+      font-weight: 400;
+      line-height: 28px;
+      font-size: 16px;
+      opacity: 1;
+      text-align: left;
+      width: 90%;
+      color: white;
+      padding-top: 10px;
+      font-family: "Open Sans", sans-serif;
+    }
+    .banner-text button {
+      margin-top: 15px;
+      background-color: #ff5722;
+      border-color: #ff5722;
+      line-height: 23px;
+      border-width: 1px;
+      border-radius: 10px;
+      padding: 10px 20px;
+      letter-spacing: 1px;
+      font-weight: 400;
+      font-size: 14px;
+    }
+    .banner-text a {
+      color: white;
+    }
+    .card {
+      text-align: center;
+      width: 25%;
+      background-color: #ff7246;
+      padding-top: 40px;
+      border: 1px solid black;
+      border-color: orangered;
+      position: relative;
+      top: -126px;
+    }
+    .card-inside-round {
+      width: 100px;
+      height: 100px;
+      margin: auto;
+      background-color: white;
+      border-radius: 100%;
+      padding: 25px;
+    }
+    .card-inside-round img {
+      width: 100%;
+    }
+    .card-text {
+      padding: 15px;
+      text-transform: uppercase;
+      color: white;
+    }
+    .card-text span {
+      margin-top: 10px;
+      font-family: "Roboto Slab", serif;
+      font-weight: 700;
+      line-height: 1.42857143;
+    }
+    .card-text p {
+      margin-top: 10px;
+      line-height: 1.7;
+      font-size: 14px;
+      font-family: "Open Sans";
+    }
+    .card-text button {
+      margin: 25px 15px;
+      background-color: transparent;
+      border-color: #eeeeee;
+      font-size: 12px;
+      padding: 5px 17px;
+      line-height: 1.38;
+      border-radius: 25px;
+      border-width: 2px;
+    }
+    .card-text a {
+      color: white;
+    }
+    .row2-card {
+      width: 25%;
+      text-align: start;
+      padding: 10px;
+    }
+    .row2-card span {
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-family: "Roboto Slab", serif;
+      font-weight: 700;
+      line-height: 1.42857143;
+      color: #555555;
+      font-size: 24px;
+    }
+    .row2-card p {
+      padding-top: 10px;
+      font-size: 18px;
+      /* background: #333333; */
+      color: #333333;
+      text-shadow: none;
+      letter-spacing: 1px;
+    }
+    .row2-card button {
+      margin-top: 18px;
+      padding: 5px 17px;
+      color: #fff;
+      background-color: #ff5722;
+      border-color: #ff5722;
+      font-size: 12px;
+      line-height: 1.38;
+      border-radius: 3px;
+    }
+  </style>
+  <body>
+    <!-- -- -->
+    <div class="main backgroungColorHeader">
+      <div class="container flex">
+        <div class="social paddingIcon">
+          <ul class="flex iconBackgroundColor">
+            <li>
+              <a href="#" class="iconBackgroundColor"
+                ><i class="fa fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="iconBackgroundColor"
+                ><i class="fa fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="iconBackgroundColor"
+                ><i class="fa fa-google-plus"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#" class="iconBackgroundColor"
+                ><i class="fa fa-linkedin"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="sub-social-menu">
+          <ul class="flex flexRowEnd">
+            <li><a href="#" class="fa fa-phone"> 123-456-789</a></li>
+            <li><a href="#" class="fa fa-clock-o"> Mon-Fri 8:00 to 2:00</a></li>
+            <li>
+              <a href="#" class="fa fa-envelope-o"> contact@yourdomain.com</a>
+            </li>
+          </ul>
+        </div>
+        <div class="button flex">
+          <button style="margin-right: 19px"><a href="#">Donate Now</a></button>
+          <button><a href="#">Join Us</a></button>
+        </div>
+      </div>
+    </div>
+    <!-- -- -->
+    <div class="main">
+      <div class="container flex main-logo">
+        <div class="logo">
+          <img
+            src="https://kodesolution.com/html/2016/echarity-html/demo/images/logo-wide.png"
+            alt="Logo"
+          />
+        </div>
+        <div class="logo-sub-menu">
+          <ul class="flex">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">ShortCodes</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- -- -->
+    <div class="main backGroungImage">
+      <div class="container donatePadding">
+        <div class="banner-text">
+          <span class="Text-donate">Donate</span>
+          <div class="poorChilder">For the poor children</div>
+          <p>
+            Every day we bring hope to millions of childer in the world's
+            hardest places as a sign of God's unconditional love.
+          </p>
+          <button><a href="#">Donate Now</a></button>
+        </div>
+      </div>
+    </div>
+    <!-- -- -->
+    <div class="main">
+      <div class="container">
+        <div class="main flex">
+          <div class="card">
+            <div class="card-inside-round">
+              <img src="https://cdn-icons-png.flaticon.com/512/66/66190.png" />
+            </div>
+            <div class="card-text">
+              <span>BECOME A VOLUNTEER</span>
+              <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing.</p>
+              <button><a href="#">Join us Now</a></button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-inside-round">
+              <img src="https://cdn-icons-png.flaticon.com/512/66/66190.png" />
+            </div>
+            <div class="card-text">
+              <span>BECOME A VOLUNTEER</span>
+              <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing.</p>
+              <button><a href="#">Join us Now</a></button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-inside-round">
+              <img src="https://cdn-icons-png.flaticon.com/512/66/66190.png" />
+            </div>
+            <div class="card-text">
+              <span>BECOME A VOLUNTEER</span>
+              <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing.</p>
+              <button><a href="#">Join us Now</a></button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-inside-round">
+              <img src="https://cdn-icons-png.flaticon.com/512/66/66190.png" />
+            </div>
+            <div class="card-text">
+              <span>BECOME A VOLUNTEER</span>
+              <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing.</p>
+              <button><a href="#">Join us Now</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -- -->
+    <div class="main">
+      <div class="container">
+        <div class="main flex">
+          <div class="row2-card">
+            <span>WE ARE ECHARITY FUNDING NETWORK WORLDWIDE. </span>
+            <p>
+              Quam distinctio quis perspiciatis facere accusamus perferendis
+              eligendi odit cum nemo fugit, tenetur sequi expedita earum nobis
+              optio tempora id repellendus?
+            </p>
+            <button><a href="#">View Details</a></button>
+          </div>
+          <div class="row2-card">
+            <img
+              src="https://kodesolution.com/html/2016/echarity-html/demo/images/services/bg-3.jpg"
+            />
+            <p>
+              Quam distinctio quis perspiciatis facere accusamus perferendis
+              eligendi odit cum nemo fugit, tenetur sequi expedita earum nobis
+              optio tempora id repellendus?
+            </p>
+            <button><a href="#">Read More</a></button>
+          </div>
+          <div class="row2-card">
+            <img
+              src="https://kodesolution.com/html/2016/echarity-html/demo/images/services/bg-3.jpg"
+            />
+            <p>
+              Quam distinctio quis perspiciatis facere accusamus perferendis
+              eligendi odit cum nemo fugit, tenetur sequi expedita earum nobis
+              optio tempora id repellendus?
+            </p>
+            <button><a href="#">Read More</a></button>
+          </div>
+          <div class="row2-card">
+            <img
+              src="https://kodesolution.com/html/2016/echarity-html/demo/images/services/bg-3.jpg"
+            />
+            <p>
+              Quam distinctio quis perspiciatis facere accusamus perferendis
+              eligendi odit cum nemo fugit, tenetur sequi expedita earum nobis
+              optio tempora id repellendus?
+            </p>
+            <button><a href="#">Read More</a></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <!-- https://kodesolution.com/html/2016/echarity-html/demo/index-mp-layout1.html# -->
+</html>
