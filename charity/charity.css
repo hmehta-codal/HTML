@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 1170px;
+  margin: auto;
+}
+.main {
+  width: 100%;
+}
+.backgroungColorHeader {
+  background-color: #ff5722;
+}
+.social {
+  width: 20%;
+}
+.sub-social-menu {
+  width: 60%;
+}
+.button {
+  width: 20%;
+  padding: 7px;
+  justify-content: center;
+}
+.flex {
+  display: flex;
+}
+.iconBackgroundColor {
+  color: white;
+  justify-content: space-around;
+}
+ul {
+  list-style-type: none;
+}
+.flexRowEnd {
+  justify-content: flex-end;
+  padding: 10px 0px;
+}
+.paddingIcon {
+  padding: 10px 0px;
+}
+.sub-social-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 0 10px;
+}
+
+.button a {
+  display: inline-block;
+  padding: 4px 5px;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  margin-right: 10px;
+}
+.logo {
+  width: 20%;
+}
+.logo-sub-menu {
+  width: 80%;
+}
+.logo-sub-menu ul {
+  justify-content: flex-end;
+}
+.main-logo {
+  padding: 15px;
+  align-items: center;
+}
+.logo-sub-menu li {
+  padding: 0 24px;
+}
+.logo-sub-menu a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #333333;
+}
+.backGroungImage {
+  background-image: url(https://kodesolution.com/html/2016/echarity-html/demo/images/bg/bg5.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  opacity: 1;
+}
+.banner-text {
+  width: 50%;
+}
+.Text-donate {
+  color: white;
+  font-size: 110px;
+  opacity: 1;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.donatePadding {
+  padding: 145px 0px;
+}
+.poorChilder {
+  width: 90%;
+  padding: 0px 20px;
+  letter-spacing: 0px;
+  font-size: 34px;
+  border-radius: 30px;
+  opacity: 1;
+  text-transform: uppercase;
+  color: white;
+  background-color: rgba(255, 87, 34, 0.8);
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  padding: 8px;
+  text-align: center;
+}
+.banner-text p {
+  font-weight: 400;
+  line-height: 28px;
+  font-size: 16px;
+  opacity: 1;
+  text-align: left;
+  width: 90%;
+  color: white;
+  padding-top: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+.banner-text a {
+  color: white;
+  margin-top: 15px;
+  background-color: #ff5722;
+  border-color: #ff5722;
+  line-height: 23px;
+  border-width: 2px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 14px;
+  display: inline-block;
+  text-decoration: none;
+}
+.card {
+  text-align: center;
+  width: 25%;
+  background-color: #ff7246;
+  padding-top: 40px;
+  border: 1px solid black;
+  border-color: orangered;
+  margin-top: -126;
+}
+.card-inside-round {
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  background-color: white;
+  border-radius: 100%;
+  padding: 25px;
+}
+.card-inside-round img {
+  width: 100%;
+}
+.card-text {
+  padding: 15px;
+  text-transform: uppercase;
+  color: white;
+}
+.card-text span {
+  margin-top: 10px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  line-height: 1.42857143;
+}
+.card-text p {
+  margin-top: 10px;
+  line-height: 1.7;
+  font-size: 14px;
+  font-family: "Open Sans";
+}
+.card-text a {
+  color: white;
+  margin: 25px 15px;
+  background-color: transparent;
+  border-color: #eeeeee;
+  font-size: 12px;
+  padding: 5px 17px;
+  line-height: 1.38;
+  border-radius: 25px;
+  border-width: 2px;
+  border: 1px solid white;
+  display: inline-block;
+}
+.row2-card {
+  width: 25%;
+  text-align: start;
+  padding: 10px 0px;
+}
+.row2-card span {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  line-height: 1.42857143;
+  color: #555555;
+  font-size: 24px;
+}
+.row2-card p {
+  padding-top: 10px;
+  font-size: 18px;
+  /* background: #333333; */
+  color: #333333;
+  text-shadow: none;
+  letter-spacing: 1px;
+}
+.row2-card a {
+  margin-top: 18px;
+  padding: 5px 17px;
+  color: #fff;
+  background-color: #ff5722;
+  border-color: #ff5722;
+  font-size: 12px;
+  line-height: 1.38;
+  border-radius: 3px;
+  display: inline-block;
+  text-decoration: none;
+}
+.causesBackgroungColor {
+  background-color: #f7f7f7;
+  margin-top: 60px;
+  padding-bottom: 100px;
+}
+.causes {
+  width: 100%;
+  text-align: center;
+  padding-top: 60px;
+  line-height: 1;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  color: #555555;
+  font-size: 2rem;
+}
+.causes span {
+  color: #ff5722;
+}
+.causes p {
+  padding-top: 20px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #a9a9a9;
+  font-family: "Open Sans", sans-serif;
+}
+.causes-part-2-image {
+  /* width: 33.3333%; */
+  padding: 0 15px;
+  margin-top: 70px;
+}
+.causes-part-2-image span {
+  width: 100%;
+  padding-top: 20px;
+  color: #555555;
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  line-height: 1.42857143;
+  font-size: 17px;
+  padding-left: 3px;
+  display: inline-block;
+}
+.causes-part-2-image img {
+  width: 100%;
+}
+.causes-part-2-image p {
+  padding-top: 4px;
+  display: inline-block;
+  line-height: 1.7;
+  color: #a9a9a9;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  padding-left: 3px;
+}
+.causes-part-2-image-text {
+  justify-content: space-between;
+}
+.causes-part-2-image-text h4 {
+  padding-top: 5px;
+  color: orangered;
+}
+
+.causes-part-2-image-text-2 {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.causes-part-2-image-text-2 a {
+  padding: 5px 20px;
+  background-color: orangered;
+  /* border-radius: 4px; */
+  color: white;
+  text-decoration: none;
+  line-height: 1.7;
+  /* color: #a9a9a9; */
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+.boy img {
+  width: 50%;
+}
+.boy-subsection {
+  background-color: #f7f7f7;
+  width: 50%;
+}
+.boy-subsection span {
+  color: orangered;
+}
+.boy-subsection h1 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  line-height: 1.42857143;
+  color: #555555;
+  text-align: center;
+  padding: 60px 0 50px 0;
+}
+
+.boy-subsection-card {
+  padding: 30px;
+  border: solid black 1px;
+}
+.boy-subsection-card img {
+  height: 30px;
+  width: 30px;
+}
+
+.boy-subsection-card-text {
+  padding-left: 30px;
+}
+
+.bsection-cards-main {
+  flex-wrap: wrap;
+  width: 80%;
+  padding: 0 57px;
+  margin: 0 auto;
+}
+
+.boy-subsection-cards {
+  margin: 10px 10px;
+  width: 45%;
+}

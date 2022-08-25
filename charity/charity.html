@@ -6,237 +6,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="charity.css" />
   </head>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    .container {
-      width: 1170px;
-      margin: auto;
-    }
-    .main {
-      width: 100%;
-    }
-    .backgroungColorHeader {
-      background-color: #ff5722;
-    }
-    .social {
-      width: 20%;
-    }
-    .sub-social-menu {
-      width: 60%;
-    }
-    .button {
-      width: 20%;
-      padding: 7px;
-      justify-content: center;
-    }
-    .flex {
-      display: flex;
-    }
-    .iconBackgroundColor {
-      color: white;
-      justify-content: space-around;
-    }
-    ul {
-      list-style-type: none;
-    }
-    .flexRowEnd {
-      justify-content: flex-end;
-      padding: 10px 0px;
-    }
-    .paddingIcon {
-      padding: 10px 0px;
-    }
-    .sub-social-menu a {
-      color: white;
-      text-decoration: none;
-      padding: 0 10px;
-    }
-
-    .button a {
-      display:inline-block;
-      padding: 4px 5px;
-      text-decoration: none;
-      color: black;
-      background-color: white;
-      margin-right: 10px;
-    }
-    .logo {
-      width: 20%;
-    }
-    .logo-sub-menu {
-      width: 80%;
-    }
-    .logo-sub-menu ul {
-      justify-content: flex-end;
-    }
-    .main-logo {
-      padding: 15px;
-      align-items: center;
-    }
-    .logo-sub-menu li {
-      padding: 0 24px;
-    }
-    .logo-sub-menu a {
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: 600;
-      text-transform: uppercase;
-      color: #333333;
-    }
-    .backGroungImage {
-      background-image: url(https://kodesolution.com/html/2016/echarity-html/demo/images/bg/bg5.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
-      width: 100%;
-      opacity: 1;
-    }
-    .banner-text {
-      width: 50%;
-    }
-    .Text-donate {
-      color: white;
-      font-size: 110px;
-      opacity: 1;
-      text-transform: uppercase;
-      font-weight: 700;
-      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-        sans-serif;
-    }
-    .donatePadding {
-      padding: 145px 0px;
-    }
-    .poorChilder {
-      width: 90%;
-      padding: 0px 20px;
-      letter-spacing: 0px;
-      font-size: 34px;
-      border-radius: 30px;
-      opacity: 1;
-      text-transform: uppercase;
-      color: white;
-      background-color: rgba(255, 87, 34, 0.8);
-      font-family: "Raleway", sans-serif;
-      font-weight: 600;
-      padding: 8px;
-      text-align: center;
-    }
-    .banner-text p {
-      font-weight: 400;
-      line-height: 28px;
-      font-size: 16px;
-      opacity: 1;
-      text-align: left;
-      width: 90%;
-      color: white;
-      padding-top: 10px;
-      font-family: "Open Sans", sans-serif;
-    }
-    .banner-text a {
-      color: white;
-      margin-top: 15px;
-      background-color: #ff5722;
-      border-color: #ff5722;
-      line-height: 23px;
-      border-width: 2px;
-      border-radius: 10px;
-      padding: 10px 20px;
-      letter-spacing: 1px;
-      font-weight: 400;
-      font-size: 14px;
-      display: inline-block;
-      text-decoration: none;
-    }
-    .card {
-      text-align: center;
-      width: 25%;
-      background-color: #ff7246;
-      padding-top: 40px;
-      border: 1px solid black;
-      border-color: orangered;
-      margin-top: -126;
-    }
-    .card-inside-round {
-      width: 100px;
-      height: 100px;
-      margin: auto;
-      background-color: white;
-      border-radius: 100%;
-      padding: 25px;
-    }
-    .card-inside-round img {
-      width: 100%;
-    }
-    .card-text {
-      padding: 15px;
-      text-transform: uppercase;
-      color: white;
-    }
-    .card-text span {
-      margin-top: 10px;
-      font-family: "Roboto Slab", serif;
-      font-weight: 700;
-      line-height: 1.42857143;
-    }
-    .card-text p {
-      margin-top: 10px;
-      line-height: 1.7;
-      font-size: 14px;
-      font-family: "Open Sans";
-    }
-    .card-text a {
-      color: white;
-      margin: 25px 15px;
-      background-color: transparent;
-      border-color: #eeeeee;
-      font-size: 12px;
-      padding: 5px 17px;
-      line-height: 1.38;
-      border-radius: 25px;
-      border-width: 2px;
-      border: 1px solid white;
-      display: inline-block;
-    }
-    .row2-card {
-      width: 25%;
-      text-align: start;
-      padding: 10px 0px;
-    }
-    .row2-card span {
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      font-family: "Roboto Slab", serif;
-      font-weight: 700;
-      line-height: 1.42857143;
-      color: #555555;
-      font-size: 24px;
-    }
-    .row2-card p {
-      padding-top: 10px;
-      font-size: 18px;
-      /* background: #333333; */
-      color: #333333;
-      text-shadow: none;
-      letter-spacing: 1px;
-    }
-    .row2-card a {
-      margin-top: 18px;
-      padding: 5px 17px;
-      color: #fff;
-      background-color: #ff5722;
-      border-color: #ff5722;
-      font-size: 12px;
-      line-height: 1.38;
-      border-radius: 3px;
-      display: inline-block;
-      text-decoration: none;
-    }
-  </style>
   <body>
     <!-- -- -->
     <div class="main backgroungColorHeader">
@@ -275,8 +46,8 @@
           </ul>
         </div>
         <div class="button flex">
-          <a href="#">Donate Now</a></button>
-         <a href="#">Join Us</a>
+          <a href="#">Donate Now</a>
+          <a href="#">Join Us</a>
         </div>
       </div>
     </div>
@@ -336,7 +107,7 @@
             <div class="card-text">
               <span>BECOME A VOLUNTEER</span>
               <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing.</p>
-             <a href="#">Join us Now</a>
+              <a href="#">Join us Now</a>
             </div>
           </div>
           <div class="card">
@@ -356,7 +127,7 @@
             <div class="card-text">
               <span>BECOME A VOLUNTEER</span>
               <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing.</p>
-             <a href="#">Join us Now</a>
+              <a href="#">Join us Now</a>
             </div>
           </div>
         </div>
@@ -412,6 +183,150 @@
       </div>
     </div>
     <!-- -- -->
+    <div class="main causesBackgroungColor">
+      <div class="container">
+        <div class="causes">
+          Our <span>Causes</span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem
+            autem<br />
+            voluptatem obcaecati!
+          </p>
+        </div>
+        <div class="flex">
+          <div class="causes-part-2">
+            <div class="causes-part-2-image">
+              <img
+                src="https://kodesolution.com/html/2016/echarity-html/demo/images/project/w4.jpg"
+                alt="image"
+              />
+              <span>Food For Poor</span>
+              <p>
+                Lorem ipsum dolor sit amet, consect adipisicing elit.<br />
+                Praesent quos sit.
+              </p>
+              <div class="causes-part-2-image-text flex">
+                <p>Rasied: $ 1000</p>
+                <h4>Goal: $2500</h4>
+              </div>
+              <div class="causes-part-2-image-text-2 flex">
+                <a href="#">Donate</a>
+                <i class="fa fa-heart-o text-theme-colored"> 89 Dollors</i>
+              </div>
+            </div>
+          </div>
+          <div class="causes-part-2">
+            <div class="causes-part-2-image">
+              <img
+                src="https://kodesolution.com/html/2016/echarity-html/demo/images/project/w4.jpg"
+                alt="image"
+              />
+              <span>Food For Poor</span>
+              <p>
+                Lorem ipsum dolor sit amet, consect adipisicing elit.<br />
+                Praesent quos sit.
+              </p>
+              <div class="causes-part-2-image-text flex">
+                <p>Rasied: $ 1000</p>
+                <h4>Goal: $2500</h4>
+              </div>
+              <div class="causes-part-2-image-text-2 flex">
+                <a href="#">Donate</a>
+                <i class="fa fa-heart-o text-theme-colored"> 89 Dollors</i>
+              </div>
+            </div>
+          </div>
+          <div class="causes-part-2">
+            <div class="causes-part-2-image">
+              <img
+                src="https://kodesolution.com/html/2016/echarity-html/demo/images/project/w4.jpg"
+                alt="image"
+              />
+              <span>Food For Poor</span>
+              <p>
+                Lorem ipsum dolor sit amet, consect adipisicing elit.<br />
+                Praesent quos sit.
+              </p>
+              <div class="causes-part-2-image-text flex">
+                <p>Rasied: $ 1000</p>
+                <h4>Goal: $2500</h4>
+              </div>
+              <div class="causes-part-2-image-text-2 flex">
+                <a href="#">Donate</a>
+                <i class="fa fa-heart-o text-theme-colored"> 89 Dollors</i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
+  <!-- -----  -->
+  <div class="main">
+    <div class="boy flex">
+      <img
+        src="https://kodesolution.com/html/2016/echarity-html/demo/images/photos/p2.jpg"
+        alt="Image"
+      />
+      <div class="boy-subsection">
+        <h1>How <span> Can Help?</span></h1>
+
+        <div class="bsection-cards-main flex">
+          <div class="boy-subsection-cards">
+            <div class="boy-subsection-card flex">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1692/1692130.png"
+                alt=""
+              />
+              <div class="boy-subsection-card-text">
+                <h3>GIVE DONATION</h3>
+                <p>Lorem ipsum dolor sit amet, <br />consectetur.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="boy-subsection-cards">
+            <div class="boy-subsection-card flex">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1692/1692130.png"
+                alt=""
+              />
+              <div class="boy-subsection-card-text">
+                <h3>GIVE DONATION</h3>
+                <p>Lorem ipsum dolor sit amet, <br />consectetur.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="boy-subsection-cards">
+            <div class="boy-subsection-card flex">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1692/1692130.png"
+                alt=""
+              />
+              <div class="boy-subsection-card-text">
+                <h3>GIVE DONATION</h3>
+                <p>Lorem ipsum dolor sit amet, <br />consectetur.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="boy-subsection-cards">
+            <div class="boy-subsection-card flex">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/1692/1692130.png"
+                alt=""
+              />
+              <div class="boy-subsection-card-text">
+                <h3>GIVE DONATION</h3>
+                <p>Lorem ipsum dolor sit amet, <br />consectetur.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- https://kodesolution.com/html/2016/echarity-html/demo/index-mp-layout1.html# -->
 </html>
