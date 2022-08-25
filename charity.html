@@ -32,7 +32,6 @@
     .button {
       width: 20%;
       padding: 7px;
-      /* align-items: center; */
       justify-content: center;
     }
     .flex {
@@ -57,12 +56,14 @@
       text-decoration: none;
       padding: 0 10px;
     }
-    .button button {
+
+    .button a {
+      display:inline-block;
       padding: 4px 5px;
-    }
-    button a {
       text-decoration: none;
       color: black;
+      background-color: white;
+      margin-right: 10px;
     }
     .logo {
       width: 20%;
@@ -93,7 +94,6 @@
       background-size: cover;
       background-position: center center;
       width: 100%;
-      height: 70%;
       opacity: 1;
     }
     .banner-text {
@@ -109,7 +109,7 @@
         sans-serif;
     }
     .donatePadding {
-      padding: 145px 20px;
+      padding: 145px 0px;
     }
     .poorChilder {
       width: 90%;
@@ -137,20 +137,20 @@
       padding-top: 10px;
       font-family: "Open Sans", sans-serif;
     }
-    .banner-text button {
+    .banner-text a {
+      color: white;
       margin-top: 15px;
       background-color: #ff5722;
       border-color: #ff5722;
       line-height: 23px;
-      border-width: 1px;
+      border-width: 2px;
       border-radius: 10px;
       padding: 10px 20px;
       letter-spacing: 1px;
       font-weight: 400;
       font-size: 14px;
-    }
-    .banner-text a {
-      color: white;
+      display: inline-block;
+      text-decoration: none;
     }
     .card {
       text-align: center;
@@ -159,8 +159,7 @@
       padding-top: 40px;
       border: 1px solid black;
       border-color: orangered;
-      position: relative;
-      top: -126px;
+      margin-top: -126;
     }
     .card-inside-round {
       width: 100px;
@@ -190,7 +189,8 @@
       font-size: 14px;
       font-family: "Open Sans";
     }
-    .card-text button {
+    .card-text a {
+      color: white;
       margin: 25px 15px;
       background-color: transparent;
       border-color: #eeeeee;
@@ -199,14 +199,13 @@
       line-height: 1.38;
       border-radius: 25px;
       border-width: 2px;
-    }
-    .card-text a {
-      color: white;
+      border: 1px solid white;
+      display: inline-block;
     }
     .row2-card {
       width: 25%;
       text-align: start;
-      padding: 10px;
+      padding: 10px 0px;
     }
     .row2-card span {
       letter-spacing: 1px;
@@ -225,7 +224,7 @@
       text-shadow: none;
       letter-spacing: 1px;
     }
-    .row2-card button {
+    .row2-card a {
       margin-top: 18px;
       padding: 5px 17px;
       color: #fff;
@@ -234,6 +233,8 @@
       font-size: 12px;
       line-height: 1.38;
       border-radius: 3px;
+      display: inline-block;
+      text-decoration: none;
     }
   </style>
   <body>
@@ -274,8 +275,8 @@
           </ul>
         </div>
         <div class="button flex">
-          <button style="margin-right: 19px"><a href="#">Donate Now</a></button>
-          <button><a href="#">Join Us</a></button>
+          <a href="#">Donate Now</a></button>
+         <a href="#">Join Us</a>
         </div>
       </div>
     </div>
@@ -310,7 +311,7 @@
             Every day we bring hope to millions of childer in the world's
             hardest places as a sign of God's unconditional love.
           </p>
-          <button><a href="#">Donate Now</a></button>
+          <a href="#">Donate Now</a>
         </div>
       </div>
     </div>
@@ -325,7 +326,7 @@
             <div class="card-text">
               <span>BECOME A VOLUNTEER</span>
               <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing.</p>
-              <button><a href="#">Join us Now</a></button>
+              <a href="#">Join us Now</a>
             </div>
           </div>
           <div class="card">
@@ -335,7 +336,7 @@
             <div class="card-text">
               <span>BECOME A VOLUNTEER</span>
               <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing.</p>
-              <button><a href="#">Join us Now</a></button>
+             <a href="#">Join us Now</a>
             </div>
           </div>
           <div class="card">
@@ -345,7 +346,7 @@
             <div class="card-text">
               <span>BECOME A VOLUNTEER</span>
               <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing.</p>
-              <button><a href="#">Join us Now</a></button>
+              <a href="#">Join us Now</a>
             </div>
           </div>
           <div class="card">
@@ -355,7 +356,7 @@
             <div class="card-text">
               <span>BECOME A VOLUNTEER</span>
               <p>Lorem ipsum dolor sit amet, conse ctetur adipisicing.</p>
-              <button><a href="#">Join us Now</a></button>
+             <a href="#">Join us Now</a>
             </div>
           </div>
         </div>
@@ -364,7 +365,7 @@
     <!-- -- -->
     <div class="main">
       <div class="container">
-        <div class="main flex">
+        <div class="main flex" style="padding-top: 50px">
           <div class="row2-card">
             <span>WE ARE ECHARITY FUNDING NETWORK WORLDWIDE. </span>
             <p>
@@ -372,7 +373,7 @@
               eligendi odit cum nemo fugit, tenetur sequi expedita earum nobis
               optio tempora id repellendus?
             </p>
-            <button><a href="#">View Details</a></button>
+            <a href="#">View Details</a>
           </div>
           <div class="row2-card">
             <img
@@ -383,7 +384,7 @@
               eligendi odit cum nemo fugit, tenetur sequi expedita earum nobis
               optio tempora id repellendus?
             </p>
-            <button><a href="#">Read More</a></button>
+            <a href="#">Read More</a>
           </div>
           <div class="row2-card">
             <img
@@ -394,7 +395,7 @@
               eligendi odit cum nemo fugit, tenetur sequi expedita earum nobis
               optio tempora id repellendus?
             </p>
-            <button><a href="#">Read More</a></button>
+            <a href="#">Read More</a>
           </div>
           <div class="row2-card">
             <img
@@ -405,11 +406,12 @@
               eligendi odit cum nemo fugit, tenetur sequi expedita earum nobis
               optio tempora id repellendus?
             </p>
-            <button><a href="#">Read More</a></button>
+            <a href="#">Read More</a>
           </div>
         </div>
       </div>
     </div>
+    <!-- -- -->
   </body>
   <!-- https://kodesolution.com/html/2016/echarity-html/demo/index-mp-layout1.html# -->
 </html>
