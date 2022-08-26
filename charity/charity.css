@@ -57,6 +57,7 @@ ul {
 }
 .logo {
   width: 20%;
+  margin: 15px;
 }
 .logo-sub-menu {
   width: 80%;
@@ -65,20 +66,54 @@ ul {
   justify-content: flex-end;
 }
 .main-logo {
-  padding: 15px;
   align-items: center;
 }
+.logo-sub-menu li > a {
+  margin: 19px 0px;
+}
 .logo-sub-menu li a {
-  margin: 10px 24px;
+  padding: 10px 24px;
   display: inline-block;
 }
 
-.logo-sub-menu ul li:hover {
-  background-color: #9FC246;
+.logo-sub-menu li i {
+  padding-left: 5px;
 }
 
-.logo-sub-menu ul li:first-child {
-  background-color: #9FC246;
+.submenu-content {
+  position: absolute;
+  background-color: white;
+  display: none;
+}
+
+.logo-sub-menu ul li:hover > a {
+  background-color: #9fc246;
+}
+.logo-sub-menu ul li:hover .submenu-content {
+  /* display: block; */
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.logo-sub-menu ul li:first-child > a {
+  background-color: #9fc246;
+}
+
+.submenu-content-page-layouts {
+  display: none;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.submenu-content-page-hover:hover .submenu-content-page-layouts {
+  display: block;
+  position: absolute;
+  left: 228px;
+}
+.submenu-content-page-hover {
+  display: flex;
+  position: relative;
 }
 
 .logo-sub-menu a {
