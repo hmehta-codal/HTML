@@ -44,7 +44,7 @@ ul {
 .sub-social-menu a {
   color: white;
   text-decoration: none;
-  padding: 0 10px;
+  padding: 0 10px 0px 0px;
 }
 
 .button a {
@@ -68,9 +68,19 @@ ul {
   padding: 15px;
   align-items: center;
 }
-.logo-sub-menu li {
-  padding: 0 24px;
+.logo-sub-menu li a {
+  margin: 10px 24px;
+  display: inline-block;
 }
+
+.logo-sub-menu ul li:hover {
+  background-color: #9FC246;
+}
+
+.logo-sub-menu ul li:first-child {
+  background-color: #9FC246;
+}
+
 .logo-sub-menu a {
   text-decoration: none;
   font-size: 14px;
@@ -302,7 +312,10 @@ ul {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;
 }
-.boy img {
+/* .boy img {
+  width: 50%;
+} */
+.mImage {
   width: 50%;
 }
 .boy-subsection {
@@ -344,4 +357,117 @@ ul {
 .boy-subsection-cards {
   margin: 10px 10px;
   width: 45%;
+}
+.mobilePadding {
+  padding-top: 50px;
+}
+.mImage2 {
+  margin: 15px auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .social {
+    width: 100%;
+  }
+  .iconBackgroundColor {
+    justify-content: center;
+    margin: 0 20px;
+  }
+  .container {
+    width: 100%;
+  }
+  .flex {
+    flex-wrap: wrap;
+  }
+  .sub-social-menu {
+    width: 100%;
+  }
+  .button {
+    width: 100%;
+    padding: 7px;
+    justify-content: center;
+  }
+  .flexRowEnd {
+    justify-content: center;
+    padding: 0px 0px;
+  }
+  .logo-sub-menu {
+    display: none;
+  }
+  .donatePadding {
+    padding: 0px 0px;
+  }
+  .banner-text {
+    width: 100%;
+    text-align: center;
+    padding-top: 132px;
+    padding-bottom: 67px;
+  }
+  .Text-donate {
+    font-size: 50px;
+    font-weight: 300;
+    padding-bottom: 50px;
+  }
+  .poorChilder {
+    width: 50%;
+    font-size: 10;
+    margin: 0 auto;
+  }
+  .banner-text p {
+    font-weight: 300;
+    font-size: 8px;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 10px;
+    line-height: 12px;
+    text-align: center;
+    padding-left: 29px;
+  }
+  .banner-text a {
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+  .row2-card {
+    padding: 5px 20px;
+  }
+  .mobilePadding {
+    padding-top: 15px;
+  }
+  .card {
+    width: 92%;
+    margin: 0 auto;
+  }
+  .mobileCards {
+    margin-top: -87px;
+  }
+  .row2-card {
+    width: 100%;
+  }
+  .row2-card span {
+    letter-spacing: 0px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  /* .boy img {
+    margin: 15px auto;
+  } */
+
+  .mImage {
+    width: 100%;
+  }
+  .boy-subsection {
+    width: 100%;
+  }
+  .bsection-cards-main {
+    width: 100%;
+  }
+  .boy-subsection-cards {
+    margin: 10px 10px;
+    width: 100%;
+  }
+  .boy-subsection-card-text {
+    padding-left: 0;
+  }
+  .row2-card img {
+    width: 100%;
+  }
 }
