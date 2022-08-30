@@ -50,7 +50,7 @@
       width: 50%;
     }
     .menu-uppper-left li {
-      padding: 5px 15px;
+      padding: 5px 20px 0 0;
       color: white;
       font-size: 14px;
       font-weight: normal;
@@ -59,13 +59,29 @@
       padding: 17px 15px;
       font-size: 14px;
       font-weight: normal;
-      transform: skewX(30deg);
+      position: relative;
+      z-index: 1;
+      /* transform: skewX(30deg); */
+    }
+    .menu-uppper-rigth li::after {
+      content: "";
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #ef4a2b;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      transform: skewX(-30deg);
+      opacity: 0;
     }
     .menu-uppper-rigth li {
-      transform: skewX(-30deg);
+      position: relative;
     }
-    .menu-uppper-rigth li:hover {
-      background-color: #ef4a2b;
+
+    .menu-uppper-rigth li:hover::after {
+      opacity: 1;
     }
 
     .menu-uppper-left ul li i {
@@ -103,8 +119,19 @@
       /* bottom: 0; */
     }
     .main-menu ul li a {
-      padding: 40px 12px;
+      padding: 39px 12px;
     }
+
+    .main-menu-menu ul li {
+      /* transition: 0.5s ease; */
+    }
+
+    .main-menu-menu ul li:hover {
+      border-bottom: solid 2px #ef4a2b;
+      /* transform: scale(0); */
+      /* transform: translate(-50%, -50%); */
+    }
+
     .main-menu {
       text-transform: capitalize;
       position: absolute;
@@ -116,13 +143,45 @@
     }
     .main-menu-logo {
       width: 30%;
+      position: relative;
+      z-index: 10;
+    }
+    .main-menu-logo::after {
+      top: 0px;
+      right: 0;
+      left: 205px;
+      bottom: 0;
+      content: "";
+      background-color: #ef4a2b;
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      transform: skew(-25deg);
+      z-index: -1;
+    }
+    .main-menu-logo::before {
+      top: 0px;
+      right: 351px;
+      /* left: 0px; */
+      bottom: 0;
+      content: "";
+      background-color: #ef4a2b;
+      width: 1000%;
+      height: 100%;
+      position: absolute;
+      /* transform: skew(-25deg); */
+      /* z-index: -1; */
     }
     .main-menu-menu {
       width: 70%;
     }
     .main-menu-menu a {
-      font-size: 14px;
+      font-size: 16px;
       line-height: 14px;
+      color: black;
+    }
+    .main-menu-menu a:hover {
+      color: #ef4a2b;
     }
     .main-menu-logo img {
       background-color: #ef4a2b;
@@ -130,19 +189,169 @@
       /* height: 60%;    */
     }
     .main-menu-menu-div-1 {
-      height: 25px;
-      width: 25px;
+      height: 35px;
+      width: 35px;
       border: 1px solid black;
-      margin: 0px 10px;
+      margin: 0px 12px 0 08px;
+    }
+    .main-menu-menu-div-1:hover {
+      background-color: #ef4a2b;
+    }
+
+    .main-menu-menu-div-2:hover {
+      background-color: #ef4a2b;
     }
     .main-menu-menu-div-2 {
-      height: 25px;
-      width: 25px;
+      height: 35px;
+      width: 35px;
       border: 1px solid black;
       /* margin: 0px 5px; */
     }
     .main-menu-logo img {
       padding: 11px 0px;
+    }
+    .main-image-text {
+      width: 25%;
+      color: white;
+      position: absolute;
+      top: 300px;
+      right: 0px;
+      left: 388px;
+      bottom: 0px;
+      z-index: 1;
+    }
+
+    .main-image-text h3 {
+      font-weight: bold;
+      text-transform: uppercase;
+      border-left: 4px solid;
+      line-height: 20px;
+      border-color: #ef4a2b;
+      padding-left: 8px;
+      font-family: "Sintony", sans-serif;
+    }
+
+    .main-image-text h2 {
+      padding: 22px 0 0 0;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #fff;
+      margin: 0px 0px 8px;
+      line-height: normal;
+      font-family: "Sintony", sans-serif;
+      font-style: normal;
+      font-size: 60px;
+    }
+
+    .main-image-text p {
+      line-height: 30px;
+      color: #fff;
+      word-break: break-all;
+      margin: 0px 0px 32px;
+      font-size: 16px;
+      padding-top: 10px;
+    }
+
+    .main-image-text a {
+      overflow: hidden;
+      color: black;
+      padding: 13px 60px 13px 30px;
+      background-color: white;
+      outline: white solid 3px;
+      outline-offset: 3px;
+      position: relative;
+      margin-left: 6px;
+      font-size: 14px;
+      letter-spacing: 1.2px;
+      font-weight: 700;
+    }
+    .main-image-text a:hover {
+      background-color: #ef4a2b;
+      color: white;
+    }
+    .main-image-text a:hover::before {
+      background-color: white;
+      color: black;
+    }
+    .main-image-text a::before {
+      color: white;
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 50%;
+      background-color: black;
+      top: 0;
+      right: -32px;
+      /* left: 0; */
+      bottom: 0px;
+      z-index: 1;
+      transform: rotate(60deg);
+    }
+    .main-image-text i {
+      font-size: 20px;
+      z-index: 2;
+      position: absolute;
+      color: white;
+      left: 159px;
+      top: 10px;
+    }
+    .main-image-text-a {
+      position: relative;
+    }
+    .breaking-news {
+      background-color: #ef4a2b;
+      font-family: "Sintony", sans-serif;
+      position: absolute;
+      bottom: 5px;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    .breaking-news h6 {
+      font-style: normal;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+      line-height: 18px;
+      padding: 12px 12px;
+      font-size: 14px;
+    }
+
+    .breaking-news-inner-div {
+      padding: 10px 0 10px 23px;
+      width: 85%;
+      background-color: white;
+      margin: 5px 0 5px 26px;
+      height: 80%;
+    }
+
+    .breaking-news h6 {
+      position: relative;
+      z-index: 1;
+    }
+
+    .breaking-news h6::before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      background-color: #ef4a2b;
+      left: 47px;
+      top: -39;
+      transform: rotate(50deg);
+      z-index: -1;
+    }
+    .progressive-main {
+      padding: 15px 10px;
+    }
+    .progressive-main-inner {
+      width: 33.3333%;
+      padding: 0 10px;
+    }
+    .progressive-main-inner img {
+      width: 100%;
     }
   </style>
   <body>
@@ -185,39 +394,93 @@
       </div>
 
       <!-- ---- main-menu ----  -->
-      <div class="main-menu container alignItemsCenter flex">
-        <div class="main-menu-logo">
-          <img
-            src="http://kodeforest.net/html/democracy/images/logo.png"
-            alt=""
-          />
-        </div>
-        <div class="main-menu-menu flex alignItemsCenter justifycontent">
-          <ul class="flex justifycontent">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Event</a></li>
-            <li><a href="#">Press Release</a></li>
-            <li><a href="#">news</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-          <div
-            class="main-menu-menu-div-1 flex justifycontent alignItemsCenter"
-            style=""
-          >
-            <a href="#"><i class="fa fa-heart"></i></a>
+      <div class="main main-menu">
+        <div class="container alignItemsCenter flex">
+          <div class="main-menu-logo">
+            <img
+              src="http://kodeforest.net/html/democracy/images/logo.png"
+              alt=""
+            />
           </div>
-          <div
-            class="main-menu-menu-div-2 flex justifycontent alignItemsCenter"
-            style=""
-          >
-            <a href="#"><i class="fa fa-search"></i></a>
+          <div class="main-menu-menu flex alignItemsCenter justifycontent">
+            <ul class="flex justifycontent">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Event</a></li>
+              <li><a href="#">Press Release</a></li>
+              <li><a href="#">news</a></li>
+              <li><a href="#">Team</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div
+              class="main-menu-menu-div-1 flex justifycontent alignItemsCenter"
+            >
+              <a href="#"><i class="fa fa-heart"></i></a>
+            </div>
+            <div
+              class="main-menu-menu-div-2 flex justifycontent alignItemsCenter"
+            >
+              <a href="#"><i class="fa fa-search"></i></a>
+            </div>
           </div>
         </div>
       </div>
+
+      <!-- ---- Image heading ----  -->
+      <div class="container">
+        <div class="main-image-text">
+          <h3>POLITICS</h3>
+          <h2>THE POWER OF YOUR VOICE</h2>
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae abillo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo.
+          </p>
+          <div class="flex main-image-text-a">
+            <a href="#">SEE MORE </a> <i class="fa fa-angle-right"> </i>
+          </div>
+        </div>
+      </div>
+
+      <!-- ---- Breaking News ----  -->
+
+      <div class="breaking-news container flex alignItemsCenter">
+        <h6>breaking news</h6>
+        <div class="breaking-news-inner-div flex alignItemsCenter">
+          <p>
+            Top 10 objectives and principles of our party for building just and
+            humane society and welfare programs.
+          </p>
+        </div>
+      </div>
     </div>
+
+    <!-- ---- Progressive ----  -->
+    <div class="main">
+      <div class="progressive-main flex">
+        <div class="progressive-main-inner">
+          <img
+            src="http://kodeforest.net/html/democracy/extra-images/program-02.jpg"
+            alt=""
+          />
+        </div>
+        <div class="progressive-main-inner">
+          <img
+            src="http://kodeforest.net/html/democracy/extra-images/program-02.jpg"
+            alt=""
+          />
+        </div>
+        <div class="progressive-main-inner">
+          <img
+            src="http://kodeforest.net/html/democracy/extra-images/program-02.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
     <!-- http://kodeforest.net/html/democracy/index.html -->
   </body>
 </html>
