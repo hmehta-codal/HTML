@@ -135,6 +135,17 @@
       transition: all 0.4s ease;
     }
 
+    .main-menu ul li :first-child a::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 3px;
+      background-color: red;
+      transition: all 0.4s ease;
+    }
+
     .main-menu-menu ul li a:hover::after {
       left: 0;
       width: 100%;
@@ -569,6 +580,16 @@
       top: -18px;
       transform: rotate(157deg);
     }
+    .about-section-main-image-part-2 a:hover{
+      background-color: #ef4a2b;
+    }
+    .button-i {
+      position: absolute;
+      top: 4px;
+      left: 157px;
+      color: #ef4a2b;
+      font-size: 30px;
+    }
   </style>
   <body>
     <div class="main">
@@ -743,7 +764,11 @@
               “democracies”. that will be provided to the nationalises of that
               country.
             </p>
-            <a href="#">See More<i class="fa fa-angle-right"></i></a>
+            <a href="#"
+              >See More
+              <div class="button-i">
+                <i class="fa fa-angle-right"></i></div
+            ></a>
           </div>
         </div>
       </div>
